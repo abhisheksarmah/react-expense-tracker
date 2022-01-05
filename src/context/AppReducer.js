@@ -1,4 +1,4 @@
-export default (state, { type, payload }) => {
+export default function AppReducer(state, { type, payload }) {
   switch (type) {
     case "DELETE_TRANSACTION":
       return {
@@ -15,4 +15,4 @@ export default (state, { type, payload }) => {
     default:
       return state;
   }
-};
+}
